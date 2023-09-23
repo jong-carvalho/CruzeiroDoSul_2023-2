@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Média</h1>
+        <form action="">
+            <label for="">Regimental:</label>
+            <input type="text" id="regimental"><br><br>
+            <label for="">Exercícios:</label>
+            <input type="text" id="exercicios"><br><br>
+            <label for="">Parcial:</label>
+            <input type="text" id="parcial"><br><br>
+            <br><br>
+            <input type="button" value="Calcular" onclick="calculaMedia()">
+          </form>
+          <div id="escrever"></div>
+    </div>
+</body>
+<style>
+    div {
+        border: 1px solid black;
+        width: 200px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    #escrever {
+        margin-top: 20px;
+        width: 160px;
+    }
+</style>
+<script>
+
+
+    function calculaMedia() {
+        let regimental = parseFloat(document.getElementById('regimental').value)
+        let parcial = parseFloat(document.getElementById('parcial').value)
+        let exercicios = parseFloat(document.getElementById('exercicios').value)
+
+
+        let total = (regimental + parcial + exercicios)/3
+        
+
+        if(total >= 6) {
+            document.getElementById("escrever").innerHTML = "Aprovado"
+        } else if(total >= 2 && total < 6){     
+            document.getElementById("escrever").innerHTML = "Você deverá realizar a avaliação de exame!"
+        } else {
+            document.getElementById("escrever").innerHTML = "Reprovado"
+        }
+        
+
+    }
+
+
+</script>
+</html>

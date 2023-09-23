@@ -1,0 +1,6 @@
+1 - criar estrutura base do html
+2- configuração * e body
+3A - criar tag com class container
+3B - criar configuração no css 
+4A - configurar left_side inteiro no html
+4B - configurar left_side inteiro no css
