@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--O que é Linear Layout?-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:ignore="ExtraText">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o melhor carro antigo em sua opinião:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_gravity="center_horizontal"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fusca"
+        android:id="@+id/check_fusca"
+    />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brasilia"
+        android:id="@+id/check_brasilia"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monza"
+        android:id="@+id/check_monza"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chevette"
+        android:id="@+id/check_chevette"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kombi"
+        android:id="@+id/check_kombi"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fiat 147"
+        android:id="@+id/check_fiat_147"
+        />
+
+    <Button
+        android:id="@+id/btn_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="publicaResultado"
+        android:text="Resultado" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/resultado" />
+
+</LinearLayout>

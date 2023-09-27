@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione um dos casos:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_id="@+id/grupo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        tools:ignore="UnknownId">
+
+        <RadioButton
+            android:id="@+id/homem_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homem com mais de 65 anos idade" />
+
+        <RadioButton
+            android:id="@+id/homem_contribuicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homem com mais de 35 anos de contribuição" />
+
+        <RadioButton
+            android:id="@+id/homem_negado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homem com menos de 65 anos de idade" />
+
+        <RadioButton
+            android:id="@+id/mulher_idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulher com mais de 60 anos de idade" />
+
+        <RadioButton
+            android:id="@+id/mulher_contribuicao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulher com mais de 30 anos de contribuição" />
+
+        <RadioButton
+            android:id="@+id/mulher_negado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mulher com menos de idade" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verificar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="350dp"
+        android:onClick="aposentadoria"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedido de aposentadoria: "
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450dp"
+        android:textAlignment="center"/>
+
+
+
+</RelativeLayout>
