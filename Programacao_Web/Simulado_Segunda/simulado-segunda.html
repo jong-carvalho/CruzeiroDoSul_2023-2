@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./simulado_segunda.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Calculo de Proteína</h1>
+        <form action="">
+            <p>Insira os alimentos que você comeu hoje</p>
+            <label for="">Digite o alimento:</label>
+            <input type="text" id="proteinas"><br><br>
+            <input type="button" value="Cadastrar Proteína" onclick="cadastrarAlimento()">
+            <br><br>
+            <label for="">Digite seu peso:</label>
+            <input type="text" id="peso"><br><br>
+            <input type="button" value="Mostrar Informações" onclick="mostrarInformacoes()">
+          </form>
+          <div id="escrever"></div>
+    </div>
+    <div id="descricao">
+        <h1>Descrições do Simulado</h1>
+        <p>Vamos criar uma calculadora de consumo diário de proteínas.</p>
+        <p>Na primeira caixa de texto o usuário deve inserir um dos alimentos: leite(30), ovos(31), peixe(33), frango(34) ou carne(35)</p>
+        <p>Ao inserir um alimento o sistema deve mostrar a mensagem: Proteína: "carne" foi adicionada ao seu calculo diário</p>
+        <br>
+        <p>Na segunda caixa após inserir todas as proteínas, devemos informar o peso</p>
+        <p>Ao clicar no botão "Mostrar Informações" devemos exibir as seguintes mensagens:</p>
+        <p>Caso cálculo da proteína for > 1.5 : Você está consumindo muita proteína</p>
+        <p>Caso cálculo da proteína for >= 1.2 : Você está consumindo proteína na medida certa</p>
+        <p>Caso cálculo da proteína for < 1.2 : Você está consumindo pouca proteína</p>
+        <br>
+        <p>O cálculo é feito da seguinte maneira:</p>
+        <p>proteinas / peso</p>
+    </div>
+</body>
+<style>
+    div {
+        border: 1px solid black;
+        width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    #escrever {
+        margin-top: 20px;
+        width: 260px;
+    }
+
+    #descricao {
+        margin-top: 50px;
+        width: 500px;
+    }
+</style>
+</html>
