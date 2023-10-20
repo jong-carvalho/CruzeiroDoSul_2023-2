@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./parcial-sexta.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Cadastrando Letras</h1>
+        <form action="">
+            <p>Cadastre a quantidade de letras que quiser!</p>
+            <label for="">Digite uma letra:</label>
+            <input type="text" id="letra"><br><br>
+            <input type="button" value="Cadastrar Letra" onclick="cadastrarLetras()">
+            <input type="button" value="Mostrar Letras" onclick="mostrarLetras()">
+          </form>
+          <div id="escrever"></div>
+    </div>
+</body>
+<style>
+    div {
+        border: 1px solid black;
+        width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    #escrever {
+        margin-top: 20px;
+        width: 260px;
+    }
+</style>
+</html>
